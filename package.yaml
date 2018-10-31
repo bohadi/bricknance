@@ -1,0 +1,43 @@
+name:                bricknance
+version:             0.1.0.0
+github:              "bohadi/bricknance"
+license:             BSD3
+author:              "bohadi"
+maintainer:          "bohadi@protonmail.com"
+copyright:           "2018 bohadi"
+
+extra-source-files:
+- README.md
+
+description:         Please see the README on GitHub at <https://github.com/bohadi/bricknance#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- time
+- bytestring
+- text
+- split
+- containers
+- vector
+- aeson
+- microlens
+- microlens-th
+- network
+- websockets
+- wuss
+- vty
+- brick
+
+library:
+  source-dirs: src
+
+executables:
+  bricknance:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - bricknance
