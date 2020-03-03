@@ -3,7 +3,7 @@ version:             0.1.0.0
 github:              "bohadi/bricknance"
 license:             BSD3
 author:              "bohadi"
-maintainer:          "bohadi@protonmail.com"
+maintainer:          
 copyright:           "2018 bohadi"
 
 extra-source-files:
